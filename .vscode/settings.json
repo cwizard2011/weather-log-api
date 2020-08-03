@@ -1,4 +1,0 @@
-{
-  "appService.defaultWebAppToDeploy": "/subscriptions/85eda9d7-db75-4861-b4ba-59382949a399/resourceGroups/appsvc_windows_centralus/providers/Microsoft.Web/sites/weather-log-api",
-  "appService.deploySubpath": "publish"
-}
