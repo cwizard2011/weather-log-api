@@ -19,3 +19,4 @@
 /Users/cwizard/Desktop/C#API/weatherlogapi/obj/Release/netcoreapp3.1/weatherlogapi.dll
 /Users/cwizard/Desktop/C#API/weatherlogapi/obj/Release/netcoreapp3.1/weatherlogapi.pdb
 /Users/cwizard/Desktop/C#API/weatherlogapi/obj/Release/netcoreapp3.1/weatherlogapi.genruntimeconfig.cache
+/Users/cwizard/Desktop/C#API/weatherlogapi/bin/Release/netcoreapp3.1/appsettings.sample.json

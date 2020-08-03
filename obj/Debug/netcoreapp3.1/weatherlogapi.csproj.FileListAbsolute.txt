@@ -19,3 +19,9 @@
 /Users/cwizard/Desktop/C#API/weatherlogapi/obj/Debug/netcoreapp3.1/weatherlogapi.dll
 /Users/cwizard/Desktop/C#API/weatherlogapi/obj/Debug/netcoreapp3.1/weatherlogapi.pdb
 /Users/cwizard/Desktop/C#API/weatherlogapi/obj/Debug/netcoreapp3.1/weatherlogapi.genruntimeconfig.cache
+/Users/cwizard/Desktop/C#API/weatherlogapi/bin/Debug/netcoreapp3.1/publish/web.config
+/Users/cwizard/Desktop/C#API/weatherlogapi/bin/Debug/netcoreapp3.1/appsettings.sample.json
+/Users/cwizard/Desktop/C#API/weatherlogapi/bin/Debug/netcoreapp3.1/publish/appsettings.Development.json
+/Users/cwizard/Desktop/C#API/weatherlogapi/bin/Debug/netcoreapp3.1/publish/appsettings.json
+/Users/cwizard/Desktop/C#API/weatherlogapi/bin/Debug/netcoreapp3.1/publish/weatherlogapi.deps.json
+/Users/cwizard/Desktop/C#API/weatherlogapi/bin/Debug/netcoreapp3.1/publish/weatherlogapi.runtimeconfig.json
