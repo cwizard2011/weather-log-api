@@ -25,15 +25,6 @@ namespace weatherlogapi
             Db = db;
         }
 
-        public async Task InsertAsync()
-        {
-            using var cmd = Db.Connection.CreateCommand();
-            // cmd.CommandText = @"call create_log(@city, @current_temperature)";
-            cmd.CommandText = @"Insert Into data_log(city, current_temperature) VALUES(@city, @current_temperature)";
-            BindParams(cmd);
-            await cmd.ExecuteNonQueryAsync();
-            id = (int) cmd.LastInsertedId;
-        }
 
         public async Task UpdateAsync()
         {

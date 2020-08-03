@@ -1,7 +1,7 @@
 using System;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
-
+using weatherlogapi.Models;
 using System.Collections.Generic;
 
 
@@ -39,7 +39,7 @@ namespace weatherlogapi.controllers
 
      // POST api/log
      [HttpPost]
-     public async Task<IActionResult> Post([FromBody]WeatherLog body)
+     public async Task<IActionResult> Post([FromBody]WeatherPost body)
      {
        List<string> ls = new List<string>();
        if (body.city is null || body.city.Length < 3) ls.Add("city");
@@ -53,8 +53,6 @@ namespace weatherlogapi.controllers
        var existing = await query.FindExistingNameAsync(body.city);
        if (existing is null) {
         body.Db = Db;
-        body.read_count = 1;
-        body.created_date = new DateTime().Date.Date;
         await body.InsertAsync();
         return new OkObjectResult(body);
        } else {
@@ -68,7 +66,7 @@ namespace weatherlogapi.controllers
 
      // PUT api/log/5
      [HttpPut("{id}")]
-     public async Task<IActionResult> PutOne(int id, [FromBody]WeatherLog body)
+     public async Task<IActionResult> PutOne(int id, [FromBody]WeatherLogUpdateDTO body)
      {
        await Db.Connection.OpenAsync();
        var query = new WeatherLogQuery(Db);
@@ -77,7 +75,7 @@ namespace weatherlogapi.controllers
          return new NotFoundResult();
        }
        result.current_temperature = body.current_temperature;
-       result.read_count = body.read_count;
+       result.read_count = result.read_count + 1;
        await result.UpdateAsync();
        return new OkObjectResult(result);
      }

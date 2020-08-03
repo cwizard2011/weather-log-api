@@ -5,7 +5,7 @@ using System.Data.Common;
 using System.Threading.Tasks;
 using MySqlConnector;
 
-namespace weatherlogapi
+namespace weatherlogapi.Models
 {
     public class WeatherLogQuery
     {
@@ -39,8 +39,6 @@ namespace weatherlogapi
             DbType = DbType.Int32,
             Value = city_name
           });
-           Console.WriteLine(city_name);
-            Console.WriteLine("I am here");
           var result = await ReadExisting(await cmd.ExecuteReaderAsync());
           return result.Count > 0 ? result[0] : null;
         }

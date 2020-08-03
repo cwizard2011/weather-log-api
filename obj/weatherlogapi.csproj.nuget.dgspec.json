@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/Users/cwizard/Desktop/C#API/weatherlogapi/weatherlogapi.csproj": {}
+    "/Users/cwizard/Desktop/WeatherLogger/weatherlogapi/weatherlogapi.csproj": {}
   },
   "projects": {
-    "/Users/cwizard/Desktop/C#API/weatherlogapi/weatherlogapi.csproj": {
+    "/Users/cwizard/Desktop/WeatherLogger/weatherlogapi/weatherlogapi.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/cwizard/Desktop/C#API/weatherlogapi/weatherlogapi.csproj",
+        "projectUniqueName": "/Users/cwizard/Desktop/WeatherLogger/weatherlogapi/weatherlogapi.csproj",
         "projectName": "weatherlogapi",
-        "projectPath": "/Users/cwizard/Desktop/C#API/weatherlogapi/weatherlogapi.csproj",
+        "projectPath": "/Users/cwizard/Desktop/WeatherLogger/weatherlogapi/weatherlogapi.csproj",
         "packagesPath": "/Users/cwizard/.nuget/packages/",
-        "outputPath": "/Users/cwizard/Desktop/C#API/weatherlogapi/obj/",
+        "outputPath": "/Users/cwizard/Desktop/WeatherLogger/weatherlogapi/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/Users/cwizard/.nuget/NuGet/NuGet.Config"
@@ -36,6 +36,20 @@
       "frameworks": {
         "netcoreapp3.1": {
           "dependencies": {
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[3.1.6, )"
+            },
+            "Microsoft.EntityFrameworkCore.InMemory": {
+              "target": "Package",
+              "version": "[3.1.6, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[3.1.6, )"
+            },
             "MySql": {
               "target": "Package",
               "version": "[5.5.14.1, )"
@@ -43,6 +57,14 @@
             "MySqlConnector": {
               "target": "Package",
               "version": "[1.0.0, )"
+            },
+            "Swashbuckle.AspNetCore": {
+              "target": "Package",
+              "version": "[5.5.0, )"
+            },
+            "xunit": {
+              "target": "Package",
+              "version": "[2.4.0, )"
             }
           },
           "imports": [
